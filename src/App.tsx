@@ -1,34 +1,50 @@
-import { useState } from 'react';
-import reactLogo from './assets/react.svg';
-import viteLogo from '/vite.svg';
-import './App.css';
+import { Button } from '@components/common/Button';
+import { Card } from '@components/common/Card';
+import { Input } from '@components/common/Input';
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <div className="min-h-screen flex flex-col items-center justify-center p-8">
+      <div className="max-w-2xl w-full space-y-8">
+        {/* Hero Section */}
+        <div className="text-center space-y-4">
+          <h1 className="text-6xl font-extrabold tracking-tight">FORM</h1>
+          <p className="text-xl font-bold text-slate-dark">
+            Dress with less stress
+          </p>
+        </div>
+
+        {/* Button Examples */}
+        <div className="flex flex-wrap gap-4 justify-center">
+          <Button variant="primary" size="lg">
+            Get Started
+          </Button>
+          <Button variant="secondary" size="lg">
+            Learn More
+          </Button>
+          <Button variant="outline" size="lg">
+            Browse Styles
+          </Button>
+        </div>
+
+        {/* Card Example */}
+        <Card hoverable>
+          <h3 className="text-2xl font-medium mb-2">Minimalist Aesthetic</h3>
+          <p className="text-slate-dark">
+            Clean lines, neutral tones, and timeless pieces that never go out of
+            style.
+          </p>
+        </Card>
+
+        {/* Input Example */}
+        <Input
+          label="Email Address"
+          type="email"
+          placeholder="you@example.com"
+          fullWidth
+        />
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount(count => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    </div>
   );
 }
 
