@@ -33,7 +33,9 @@
       "@styles": ["src/styles"],
       "@styles/*": ["src/styles/*"],
       "@utils": ["src/utils"],
-      "@utils/*": ["src/utils/*"]
+      "@utils/*": ["src/utils/*"],
+      "@pages/*": ["./src/pages/*"],
+      "@pages/LandingPage/*": ["./src/pages/LandingPage/*"]
     }
   },
   "include": ["src"],

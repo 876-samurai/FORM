@@ -412,7 +412,7 @@ export const LandingPage = () => {
                 </motion.div>
               ))}
             </motion.div>
-            <div className="absolute inset-0 bg-[#F5F5F0] opacity-40 z-[5]" />
+            <div className="absolute inset-0 bg-[#F5F5F0] opacity-40 z-5" />
           </motion.div>
         ) : (
           // Login/Get Started Page

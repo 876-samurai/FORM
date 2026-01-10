@@ -33,7 +33,9 @@
       "@components/*": ["src/components/*"],
       "@types/*": ["src/types/*"],
       "@styles/*": ["src/styles/*"],
-      "@utils/*": ["src/utils/*"]
+      "@utils/*": ["src/utils/*"],
+      "@pages/*": ["./src/pages/*"],
+      "@pages/LandingPage/*": ["./src/pages/LandingPage/*"]
     }
   },
   "include": ["src"]
